@@ -5,6 +5,16 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EditorComponent } from './editor/editor.component';
 
+import { FormsModule } from '@angular/forms';
+import { MonacoEditorModule } from 'ngx-monaco-editor';
+
+// const monacoConfig: NgxMonacoEditorConfig = {
+//   baseUrl: 'app-name/assets', // configure base path cotaining monaco-editor directory after build default: './assets'
+//   defaultOptions: { scrollBeyondLastLine: false }, // pass default options to be used
+//   onMonacoLoad: () => { console.log((<any>window).monaco); } // here monaco object will be available as window.monaco use this function to extend monaco editor functionalities.
+// };
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +22,9 @@ import { EditorComponent } from './editor/editor.component';
     EditorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MonacoEditorModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

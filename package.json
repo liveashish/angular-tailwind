@@ -22,6 +22,8 @@
     "@tailwindcss/typography": "^0.4.1",
     "@tailwindcss/ui": "^0.7.2",
     "eslint-plugin-prettier": "^3.4.0",
+    "monaco-editor": "^0.25.2",
+    "ngx-monaco-editor": "^12.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
