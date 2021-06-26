@@ -10,7 +10,11 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    display: ['responsive', 'group-hover'], // Group over added
+    visibility: ['responsive', 'group-hover'], // Group over added
+    transform: ['responsive', 'group-hover'], // Group over added
+    translate: ['responsive', 'hover', 'focus', 'group-hover'], // Group over added
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'] // Group over added
   },
-  plugins: [require('@tailwindcss/forms'),require('@tailwindcss/typography')],
+  plugins: [ require('@tailwindcss/ui'), require('@tailwindcss/forms'),require('@tailwindcss/typography')],
 };
